@@ -1,0 +1,66 @@
+body {
+    background-image: url(/assets/images/congruent_pentagon.png);
+    /* background-color: aqua; */
+}
+
+header {
+    font-family: 'Bangers';
+    font-size: 100px;
+    text-align: center
+    
+}
+.blink_me {
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+#match {
+    font-family: 'Bangers';
+    text-align: center;
+    padding: 30px;
+}
+
+.col-md-4 {
+    font-family: 'Bangers';
+    text-align: center;
+}
+
+.col-md-6 {
+    font-family: 'Bangers';
+    text-align: center;
+}
+
+p {
+    font-size: 40px;
+    text-align: left;
+}
+
+#left {
+    background: #deed7d;
+    border: 5px solid #c5d65c;
+    border-style: outset;
+    margin: 10px;
+}
+
+#right {
+    background: #deed7d;
+    border: 5px solid #c5d65c;
+    border-style: outset;
+    margin: 10px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    align-content: center;
+}
+
+button {
+    display: inline;
+    float: left;
+    margin: 5px;
+}
+
