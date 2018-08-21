@@ -16,12 +16,14 @@ $(document).ready(function() {
     console.log('ready');
    
 
-    function reset(){
-        target = Math.floor((Math.random() * (120-19)) + 19);
-        xOne = Math.floor((Math.random() * 12) + 1);
-        xTwo = Math.floor((Math.random() * 12) + 1);
-        xThree = Math.floor((Math.random() * 12) + 1);
-        xFour = Math.floor((Math.random() * 12) + 1);
+    function resetGame(){
+        target = Math.floor((Math.random() * (120-19)) + 19),
+        xOne = Math.floor((Math.random() * 12) + 1),
+        xTwo = Math.floor((Math.random() * 12) + 1),
+        xThree = Math.floor((Math.random() * 12) + 1),
+        xFour = Math.floor((Math.random() * 12) + 1),
+        userScore = 0;
+        $('#target').text(target);
     };
 
    $('#target').text(target);
@@ -31,17 +33,16 @@ $(document).ready(function() {
         userScore = userScore + xOne;
         $('#current').text(userScore);
         if (userScore < target) {
-            overTarget = false;
-            return;
+            return; 
         } else if (userScore === target){
             wins++;
             $('#wins').text(wins);
-            reset();
+            resetGame();
         } else {
             overTarget = true;
             losses++;
             $('#losses').text(losses);
-            reset();
+            resetGame();
         };
         
     });
@@ -57,12 +58,12 @@ $(document).ready(function() {
         } else if (userScore === target){
             wins++;
             $('#wins').text(wins);
-            reset();
+            resetGame();
         } else {
             overTarget = true;
             losses++;
             $('#losses').text(losses);
-            reset();
+            resetGame();
         };
         
     });
@@ -78,12 +79,12 @@ $(document).ready(function() {
         } else if (userScore === target){
             wins++;
             $('#wins').text(wins);
-            reset();
+            resetGame();
         } else {
             overTarget = true;
             losses++;
             $('#losses').text(losses);
-            reset();
+            resetGame();
         };
     });
     
@@ -98,12 +99,12 @@ $(document).ready(function() {
         } else if (userScore === target){
             wins++;
             $('#wins').text(wins);
-            reset();
+            resetGame();
         } else {
             overTarget = true;
             losses++;
             $('#losses').text(losses);
-            reset();
+            resetGame();
         };
         
     });
