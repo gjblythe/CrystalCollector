@@ -1,6 +1,6 @@
 CrystalCollector
 
-![](Crystal-Collector.gif)
+![](Crystal-Collector.gif);
 
 This is a simple click based game where the user tries to match a randomly generated number.
 
