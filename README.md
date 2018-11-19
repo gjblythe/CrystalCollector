@@ -1,6 +1,6 @@
 CrystalCollector
 
-![](https://github.com/gjblythe/CrystalCollector/Crystal Collector.gif);
+![](https://github.com/gjblythe/CrystalCollector/CrystalCollector.gif);
 
 This is a simple click based game where the user tries to match a randomly generated number.
 
